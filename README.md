@@ -1,7 +1,7 @@
 # DWD
 This is the official implementation code for [DWD: Data Augmentation with Diffusion for Open-Set Semi-Supervised Learning](https://openreview.net/pdf?id=OP3sNTIE1O) (NeurIPS 2024')
 
-===
+====
 
 To reproduce the result, please following the procedure.
 
@@ -23,7 +23,10 @@ To reproduce the result, please following the procedure.
 #### Train FixMatch + DWD-UT using tranformed data
 - python train.py --dataset cifar10 --num-labeled 100 --arch wideresnet --batch-size 64 --lr 0.03 --expand-labels --seed 5 --u_data ood --img_size 32 --exp_name Reproducing
 
-===
+<br>
+
+====
+
 
 ## Quantitative Result
 
@@ -62,6 +65,8 @@ To reproduce the result, please following the procedure.
 | ImageNet-30      | 72.78±0.48  | **75.28±0.68**    | 79.67±0.81  | **82.95±0.45**     | 79.23±0.29  | **81.96±0.26**   |
 | ImageNet-100     | 65.42±0.36  | **80.02±0.45**    | 65.80±0.49  | **76.23±0.37**     | 66.85±0.19  | **80.19±0.13**   |
 
+
+<br><br>
 
 ## Qualitative Result
 - Data transform example by DWD

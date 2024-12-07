@@ -1,7 +1,7 @@
 # DWD
 This is the official implementation code for [DWD: Data Augmentation with Diffusion for Open-Set Semi-Supervised Learning](https://openreview.net/pdf?id=OP3sNTIE1O) (NeurIPS 2024')
 
-====
+----
 
 To reproduce the result, please following the procedure.
 
@@ -25,8 +25,7 @@ To reproduce the result, please following the procedure.
 
 <br>
 
-====
-
+----
 
 ## Quantitative Result
 

@@ -28,5 +28,5 @@ To reproduce the result, please following the procedure.
 ![poster](./assets/data_transform.png)
 
 - Comparison of feature distance between origin and transformed images
-![poster](./assets/feature_distance.png)
+![poster](./assets/feature_distance.pdf)
 

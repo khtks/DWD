@@ -32,6 +32,7 @@ To reproduce the result, please following the procedure.
 **[ DWD-SL ]** Uses transformed data with given class conditions __( Supervised )__ <br>
 **[ DWD-UT ]** Utilizes only transformed unlabeled data __( Semi-supervised )__
 
+<br>
 
 - Performance comparison on four tasks. We report the mean accuracy averaged over three seeds, along with standard error. Top scores for each task are highlighted
   
@@ -65,7 +66,7 @@ To reproduce the result, please following the procedure.
 | ImageNet-100     | 65.42±0.36  | **80.02±0.45**    | 65.80±0.49  | **76.23±0.37**     | 66.85±0.19  | **80.19±0.13**   |
 
 
-<br><br>
+<br>
 
 ## Qualitative Result
 - Data transform example by DWD

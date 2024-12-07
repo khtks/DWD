@@ -42,6 +42,7 @@ To reproduce the result, please following the procedure.
 
 <br>
 
+
 - Performance of standard SSL methods before and after applying DWD-UT.  
 | Task Name        | MixMatch    | MixMatch + DWD-UT | FixMatch    | FixMatch + DWD-UT | MPL         | MPL + DWD-UT |
 |------------------|-------------|-------------------|-------------|-------------------|-------------|--------------|
@@ -51,6 +52,7 @@ To reproduce the result, please following the procedure.
 | ImageNet-100     | 69.30±0.41  | **81.62±0.36**   | 65.11±0.32  | **80.38±0.34**   | 68.43±0.33  | **75.66±0.26** |
 
 <br>
+
 
 - Performance of open-set SSL methods before and after applying DWD-UT.
 | Task Name        | OpenMatch   | OpenMatch + DWD-UT | Fix-A-Step  | Fix-A-Step + DWD-UT | IOMatch     | IOMatch + DWD-UT |

@@ -40,9 +40,10 @@ To reproduce the result, please following the procedure.
 | ImageNet-30      | 68.67±0.37  | 70.07±0.26  | 72.65±0.70  | 72.78±0.48  | 79.67±0.81  | 79.23±0.29  | **82.20±0.38** |
 | ImageNet-100     | 69.30±0.41  | 65.11±0.32  | 68.43±0.33  | 65.42±0.36  | 65.80±0.49  | 66.85±0.19  | **82.81±0.31** |
 
+<br>
 
-
-- Performance of standard SSL methods before and after applying DWD-UT.  
+- Performance of standard SSL methods before and after applying DWD-UT.
+- 
 | Task Name        | MixMatch    | MixMatch + DWD-UT | FixMatch    | FixMatch + DWD-UT | MPL         | MPL + DWD-UT |
 |------------------|-------------|-------------------|-------------|-------------------|-------------|--------------|
 | SixAnimal (ζ = 75%) | 80.77±0.11 | **84.72±0.22**   | 82.50±0.16  | **87.17±0.19**   | 65.62±0.47  | **83.88±0.18** |
@@ -50,8 +51,10 @@ To reproduce the result, please following the procedure.
 | ImageNet-30      | 68.67±0.37  | **85.20±0.10**   | 70.07±0.26  | **81.87±0.61**   | 72.65±0.70  | **90.20±0.23** |
 | ImageNet-100     | 69.30±0.41  | **81.62±0.36**   | 65.11±0.32  | **80.38±0.34**   | 68.43±0.33  | **75.66±0.26** |
 
+<br>
 
 - Performance of open-set SSL methods before and after applying DWD-UT.
+- 
 | Task Name        | OpenMatch   | OpenMatch + DWD-UT | Fix-A-Step  | Fix-A-Step + DWD-UT | IOMatch     | IOMatch + DWD-UT |
 |------------------|-------------|--------------------|-------------|---------------------|-------------|------------------|
 | SixAnimal (ζ = 75%) | 80.34±0.21 | **85.71±0.33**    | 85.34±0.17  | **86.68±0.23**     | 83.05±0.16  | **87.20±0.13**   |

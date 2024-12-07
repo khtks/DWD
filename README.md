@@ -43,7 +43,7 @@ To reproduce the result, please following the procedure.
 <br>
 
 - Performance of standard SSL methods before and after applying DWD-UT.
-- 
+  
 | Task Name        | MixMatch    | MixMatch + DWD-UT | FixMatch    | FixMatch + DWD-UT | MPL         | MPL + DWD-UT |
 |------------------|-------------|-------------------|-------------|-------------------|-------------|--------------|
 | SixAnimal (ζ = 75%) | 80.77±0.11 | **84.72±0.22**   | 82.50±0.16  | **87.17±0.19**   | 65.62±0.47  | **83.88±0.18** |
@@ -54,7 +54,7 @@ To reproduce the result, please following the procedure.
 <br>
 
 - Performance of open-set SSL methods before and after applying DWD-UT.
-- 
+  
 | Task Name        | OpenMatch   | OpenMatch + DWD-UT | Fix-A-Step  | Fix-A-Step + DWD-UT | IOMatch     | IOMatch + DWD-UT |
 |------------------|-------------|--------------------|-------------|---------------------|-------------|------------------|
 | SixAnimal (ζ = 75%) | 80.34±0.21 | **85.71±0.33**    | 85.34±0.17  | **86.68±0.23**     | 83.05±0.16  | **87.20±0.13**   |

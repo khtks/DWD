@@ -27,8 +27,8 @@ To reproduce the result, please following the procedure.
 
 ## Quantitative Result
 
-**[ DWD-SL ]** Uses transformed data with given class conditions <U>( Supervised )<\U> <br>
-**[ DWD-UT ]** Utilizes only transformed unlabeled data <U>( Semi-supervised )<\U>
+**[ DWD-SL ]** Uses transformed data with given class conditions __( Supervised )__ <br>
+**[ DWD-UT ]** Utilizes only transformed unlabeled data __( Semi-supervised )__
 
 
 - Performance comparison on four tasks. We report the mean accuracy averaged over three seeds, along with standard error. Top scores for each task are highlighted

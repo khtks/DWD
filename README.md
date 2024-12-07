@@ -27,7 +27,7 @@ To reproduce the result, please following the procedure.
 
 ## Quantitative Result
 
-**[ DWD-SL ]** Uses transformed data with given class conditions <U>( Supervised )</U> \\
+**[ DWD-SL ]** Uses transformed data with given class conditions <U>( Supervised )</U> //
 **[ DWD-UT ]** Utilizes only transformed unlabeled data <U>( Semi-supervised )</U>
 
 

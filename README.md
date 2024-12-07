@@ -21,3 +21,7 @@ To reproduce the result, please following the procedure.
 
 ### Train FixMatch + DWD-UT using tranformed data
 - python train.py --dataset cifar10 --num-labeled 100 --arch wideresnet --batch-size 64 --lr 0.03 --expand-labels --seed 5 --u_data ood --img_size 32 --exp_name Reproducing
+
+
+## Qualitative Result
+

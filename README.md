@@ -40,7 +40,6 @@ To reproduce the result, please following the procedure.
 | ImageNet-30      | 68.67±0.37  | 70.07±0.26  | 72.65±0.70  | 72.78±0.48  | 79.67±0.81  | 79.23±0.29  | **82.20±0.38** |
 | ImageNet-100     | 69.30±0.41  | 65.11±0.32  | 68.43±0.33  | 65.42±0.36  | 65.80±0.49  | 66.85±0.19  | **82.81±0.31** |
 
-<br>
 
 
 - Performance of standard SSL methods before and after applying DWD-UT.  
@@ -51,8 +50,6 @@ To reproduce the result, please following the procedure.
 | ImageNet-30      | 68.67±0.37  | **85.20±0.10**   | 70.07±0.26  | **81.87±0.61**   | 72.65±0.70  | **90.20±0.23** |
 | ImageNet-100     | 69.30±0.41  | **81.62±0.36**   | 65.11±0.32  | **80.38±0.34**   | 68.43±0.33  | **75.66±0.26** |
 
-<br>
-
 
 - Performance of open-set SSL methods before and after applying DWD-UT.
 | Task Name        | OpenMatch   | OpenMatch + DWD-UT | Fix-A-Step  | Fix-A-Step + DWD-UT | IOMatch     | IOMatch + DWD-UT |
@@ -61,8 +58,6 @@ To reproduce the result, please following the procedure.
 | CIFAR-10/100     | 70.15±0.30  | **80.99±0.03**    | 74.60±0.31  | **79.02±0.75**     | 77.66±0.22  | **83.22±0.16**   |
 | ImageNet-30      | 72.78±0.48  | **75.28±0.68**    | 79.67±0.81  | **82.95±0.45**     | 79.23±0.29  | **81.96±0.26**   |
 | ImageNet-100     | 65.42±0.36  | **80.02±0.45**    | 65.80±0.49  | **76.23±0.37**     | 66.85±0.19  | **80.19±0.13**   |
-
-<br>
 
 
 ## Qualitative Result

@@ -81,7 +81,7 @@ To reproduce the result, please following the procedure.
 Our code implementation is based on the following public repositories:
 1. Latent Diffusion: [https://github.com/CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion)
 2. DPT: [https://github.com/ML-GSAI/DPT](https://github.com/ML-GSAI/DPT)
-3. nnPU: [[https://github.com/kiryor/nnPUlearning](https://github.com/cimeister/pu-learning)]
+3. nnPU: [https://github.com/kiryor/nnPUlearning](https://github.com/cimeister/pu-learning)
 4. DPM-Solver: [https://github.com/LuChengTHU/dpm-solver](https://github.com/LuChengTHU/dpm-solver)
 5. CFG: [https://github.com/coderpiaobozhe/classifier-free-diffusion-guidance-Pytorch/tree/master](https://github.com/coderpiaobozhe/classifier-free-diffusion-guidance-Pytorch/tree/master)
 

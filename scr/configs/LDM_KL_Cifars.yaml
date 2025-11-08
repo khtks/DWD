@@ -1,0 +1,109 @@
+general:
+  base_lr: 5.0e-5   # set to target_lr by starting main.py with '--scale_lr False'
+  benchmark: True
+  seed: 1234
+  pred: 'noise_pred'
+
+path: object
+
+train:
+  n_steps: 300000
+  batch_size: 16
+  mode: 'cond'
+  log_interval: 10
+  eval_interval: 5000
+  save_interval: 50000
+
+optimizer:
+  name: 'adamw'
+  lr: 0.0002
+  weight_decay: 0.03
+  betas: [0.99, 0.99]
+  amsgrad: False
+
+model:
+  base_learning_rate: 2.0e-06
+  target: libs.ldm.models.diffusion.ddpm.LatentDiffusion
+  params:
+    linear_start: 0.0015
+    linear_end: 0.0155
+    num_timesteps_cond: 1
+    log_every_t: 200
+    timesteps: 1000
+    loss_type: l1
+    first_stage_key: "image"
+    cond_stage_key: "class_label"
+    image_size: 32
+    channels: 4
+    scale_by_std: True
+    cond_stage_trainable: True
+    conditioning_key: 'crossattn'
+    monitor: 'val/loss_simple_ema'
+
+    unet_config:
+      target: libs.openaimodel.UNetModel
+      params:
+        image_size: 32
+        in_channels: 4
+        out_channels: 4
+        model_channels: 192
+        attention_resolutions: [ 1, 2, 2 ]   # 32, 16, 8, 4
+        num_res_blocks: 2
+        channel_mult: [ 1,2,2 ]  # 32, 16, 8, 4, 2
+        num_heads: 8
+        use_scale_shift_norm: True
+        resblock_updown: True
+
+        num_classes: 10
+        use_spatial_transformer: True
+        context_dim: 64
+
+    first_stage_config:
+#      target: libs.autoencoder.FrozenAutoencoderKL
+      target: libs.autoencoder.AutoencoderKL
+      params:
+        embed_dim: 4
+        ckpt_path: "Autoencoder_KL_Cifars_16x16x3_Attn.pt"
+
+        ddconfig:
+          double_z: True
+          z_channels: 3
+          resolution: 32
+          in_channels: 3
+          out_ch: 3
+          ch: 128
+          ch_mult: [ 1,2,2 ]  # num_down = len(ch_mult)-1
+          num_res_blocks: 2
+          attn_resolutions: [ 8 ]
+          dropout: 0.0
+
+        lossconfig:
+          target: torch.nn.Identity
+
+    cond_stage_config:
+      target: libs.modules.ClassEmbedder
+      params:
+        n_classes: 10
+        embed_dim: 512
+#        embed_dim: 5
+        key: class_label
+
+    scheduler_config: # 10000 warmup steps
+      target: libs.ldm.lr_scheduler.LambdaLinearScheduler
+      params:
+        warm_up_steps: [ 10000 ]
+        cycle_lengths: [ 10000000000000 ]
+        f_start: [ 1.e-6 ]
+        f_max: [ 1. ]
+        f_min: [ 1. ]
+
+data:
+  name: 'Cifars'
+  batch_size: 16
+  img_size: 32
+  num_workers: 5
+  params:
+    random_flip: True
+    cfg: False
+    p_uncond: True
+    u_data: 'id'

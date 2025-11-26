@@ -6,7 +6,7 @@ This is the official implementation code for [DWD: Data Augmentation with Diffus
 To reproduce the result, please following the procedure.
 
 #### Environment configuration.
-- download the assets from [here](https://zenodo.org/records/11246593) and place the files in proper location.
+- Download the assets from [here](https://zenodo.org/records/11246593) and place the files in proper location.
 - 'Cifar100.zip, cifar10.zip' locate in '/data' and extract them
 - 'Autoencoder_KL_Cifars_16x16x3_Attn.pt' place in '/assets/autoencoder'
 - 'train_1000labels.npz' place in 'assets/fid_stats'

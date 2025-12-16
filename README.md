@@ -34,7 +34,7 @@ To reproduce the result, please following the procedure.
 
 <br>
 
-- Performance comparison on four tasks. We report the mean accuracy averaged over three seeds, along with standard error. Top scores for each task are highlighted
+- Performance comparison on four tasks. We report the mean accuracy averaged over three seeds, along with standard error. Top scores for each task are highlighted.
   
 | Task Name        | MixMatch    | FixMatch    | MPL         | OpenMatch   | Fix-A-Step  | IOMatch     | DWD-SL      |
 |------------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
